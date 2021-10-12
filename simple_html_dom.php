@@ -1,6 +1,6 @@
 <?php
 /**
- * Website: http://sourceforge.net/projects/simplehtmldom/
+ * Website: https://sourceforge.net/projects/simplehtmldom/
  * Acknowledge: Jose Solorzano (https://sourceforge.net/projects/php-html/)
  * Contributions by:
  *     Yousuke Kumakura (Attribute filters)
@@ -1089,7 +1089,7 @@ class simple_html_dom
         $this->remove_noise("'<!--(.*?)-->'is");
         // strip out cdata
         $this->remove_noise("'<!\[CDATA\[(.*?)\]\]>'is", true);
-        // Per sourceforge http://sourceforge.net/tracker/?func=detail&aid=2949097&group_id=218559&atid=1044037
+        // Per sourceforge https://sourceforge.net/tracker/?func=detail&aid=2949097&group_id=218559&atid=1044037
         // Script tags removal now preceeds style tag removal.
         // strip out <script> tags
         $this->remove_noise("'<\s*script[^>]*[^/]>(.*?)<\s*/\s*script\s*>'is");
@@ -1523,7 +1523,7 @@ class simple_html_dom
     // parse attributes
     protected function parse_attr($node, $name, &$space)
     {
-        // Per sourceforge: http://sourceforge.net/tracker/?func=detail&aid=3061408&group_id=218559&atid=1044037
+        // Per sourceforge: https://sourceforge.net/tracker/?func=detail&aid=3061408&group_id=218559&atid=1044037
         // If the attribute is already defined inside a tag, only pay atetntion to the first one as opposed to the last one.
         if (isset($node->attr[$name]))
         {
